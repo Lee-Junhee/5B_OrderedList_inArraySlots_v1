@@ -6,7 +6,7 @@
   List_inArraySlots
  */
 
-public class OrderedList_inArraySlots {
+public class OrderedList_inArraySlots implements OrderedListInterface {
 
     private List_inArraySlots list_iAS;
 
@@ -33,5 +33,17 @@ public class OrderedList_inArraySlots {
          // System.out.println( "OL adding " + value
          //                   + " at index " + dest);
          list_iAS.add( dest, value);
+     }
+     
+     public int size() {
+         return list_iAS.size();
+     }
+
+     public int get(int index) {
+         return list_iAS.get(index);
+     }
+
+     public void remove(int index) {
+	 list_iAS.remove(index);
      }
 }
